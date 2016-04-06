@@ -24,7 +24,7 @@ cacheSolve <- function(x, ...) {
         message("matrix is in memory")
         return(inverse)
     }
-    message("inverse is not in memory so the inverse (if exist) is gonna be computed")
+    message("The inverse is not in memory so it will be computed")
     data <- X$get()
     inverse <- pseudoinverse(data, ...)
     X$setinverse(inverse)
